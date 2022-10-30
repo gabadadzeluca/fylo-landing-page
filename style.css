@@ -20,6 +20,13 @@
 }
 
 
+/*error message*/
+.error-msg{
+    color: red;
+    font-family: var(--open-sans-font);
+    font-weight: var(--regular);
+    font-size: 0.75rem;
+}
 body{
     display: flex;
     justify-content: center;
@@ -107,6 +114,7 @@ header p{
 input, button{
     font-family: var(--raleway-font);
     height: 2.5rem;
+    
 }
 button{
     background-color: var(--bright-blue);
@@ -114,6 +122,7 @@ button{
     border: none;
 }
 input{
+    width: 280px;
     border: 0.0625rem solid var(--dark-blue);
     font-size: 0.75rem;
     padding-left: 1.3125rem;
@@ -187,7 +196,7 @@ main{
     flex-direction: column;
     box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
     border-radius: 0.25rem;
-    width: 241px;
+    width: 15.0625rem;
     margin-top: 2.8125rem;
     padding: 20px 13px 19.25px 26px;
 }
