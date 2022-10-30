@@ -54,6 +54,7 @@ h3,h4,h5{
 /* HEADER */
 header{
     width: 20rem;
+    margin-bottom: 5.625rem;
 }
 header a{
     font-weight: var(--regular);
@@ -78,6 +79,7 @@ header h4{
 }
 
 .header-line{
+    margin-top: 1.5rem;
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
@@ -87,6 +89,9 @@ header h4{
     width: 50%;
     display: inline-flex;
     justify-content: space-between;
+}
+.header-line a{
+    color: var(--dark-blue);
 }
 header p{
     width: 296px;
@@ -125,12 +130,15 @@ input{
 
 /* MAIN */
 main{
-    width: 20rem;
+    width: 100vw;
+    background-color: var(--light-grayish-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+#background{
+    position: relative;
+}
 .box-1{
     text-align: center;
     display: flex;
@@ -166,13 +174,14 @@ main{
     width: 0.75rem;
     height:  0.75rem;
 }
-
-/* QUOTE BOX */
 .main-txt{
+    width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* QUOTE BOX */
+
 .box-2{
     display: flex;
     flex-direction: column;
@@ -218,7 +227,7 @@ footer{
 
 /* GRAY footer*/
 .gray-box{
-    background-color: var(--desaturated-blue);
+    background: var(--desaturated-blue);
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -269,7 +278,7 @@ footer{
 
 .blue-box{
     width: 100%;
-    background-color: var(--dark-blue);
+    background: var(--dark-blue);
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -295,7 +304,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 #blue-div section *{
     margin: 0;
