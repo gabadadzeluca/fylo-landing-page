@@ -168,6 +168,11 @@ main{
     flex-direction: column;
     align-items: center;
 }
+main>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #background{
     position: relative;
     width: 100vw;
@@ -204,6 +209,8 @@ main{
     border-bottom: 0.0625rem solid var(--cyan);
 }
 .fylo-link p{
+    font-family: var(--open-sans-font);
+    font-weight: var(--regular);
     color: var(--cyan);
     text-decoration: none;
 }
@@ -246,6 +253,10 @@ main{
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    font-family: var(--open-sans-font);
+}
+.profile *{
+    margin: 0;
 }
 .profile img{
     width: 1.5rem;
@@ -423,5 +434,110 @@ footer{
     }
     .desktop{
         display: block;
+    }
+
+    /* HEADER */
+    header h4, header p{
+        text-align: start;
+    }
+    header h4{
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+    header p{
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+    .header-full{
+        width: 80rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-box{
+        align-items: flex-start;
+    }
+    .form-cls{
+        width: auto;
+        height: 45px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .form-cls button{
+        width: 200px;
+        height: 44px;
+        margin: 0 0 0 1rem;
+    }
+    .form-cls input{
+        width: 20rem;
+    }
+    .form-cls input, .form-cls button{
+        font-size: 0.875rem;
+    }
+
+    .header-full img{
+        width: 40rem;
+    }
+
+    /*MAIN*/
+   .illustration-2{
+        width: 542px;
+    }
+    #background-desktop{
+        width: 100vw;
+    }
+    main>section{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80rem;
+        justify-content: space-between;
+    }
+    .main-txt{
+        width: 40.5rem;
+        align-items: flex-start;
+    }
+    .box-1{
+        align-items: flex-start;
+        text-align: start;
+        max-width: 100%;
+    }
+    .box-1 p{
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 33.0625rem;
+        margin-bottom: 1rem;
+    }
+    .box-1 h5{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        width: 110%;
+        margin-bottom: 2.375rem;
+    }
+
+    .box-2{
+        width: 289px;
+        padding: 19px 34px 26px 33px;
+    }
+    .box-2 p{
+        font-size: 0.8125rem;
+        line-height: 1.4375rem;
+    }
+
+    .profile{
+        width: 8.5625rem;
+    }
+    .profile>img{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+    .profile p{
+        font-size: 0.5rem;
+        line-height: 0.9375rem;
+    }
+    .profile b{
+        font-size: 0.6875rem;
     }
 }
