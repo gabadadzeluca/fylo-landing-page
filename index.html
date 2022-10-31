@@ -10,7 +10,6 @@
 
 </head>
 <body>
-<div class="wrapper">
   <header>
     <div class="header-line">
       <img src="images/logo.svg" id="logo-light"> 
@@ -44,7 +43,8 @@
     </section>
   </header>
   
-  <img src="images/bg-curve-mobile.svg" id="background">
+  <img src="images/bg-curve-mobile.svg" id="background" class="mobile">
+  <img src="images/bg-curve-desktop.svg" id="background-desktop" class="desktop">
   <main>
     <img src="images/illustration-2.svg" alt="" class="illustration-2">
     <div class="main-txt">
@@ -58,12 +58,13 @@
           Securely share files and folders with friends, family and colleagues for 
           live collaboration. No email attachments required!
         </p>
+        
+
+      </div>
         <a class="fylo-link" href="#">
           <p>See how Fylo works</p>
           <img src="images/icon-arrow.svg">
         </a>
-
-      </div>
       <div class="box-2">
         <img src="images/icon-quotes.svg">
         <p>
@@ -98,10 +99,13 @@
         If you have any questions, our support team would be happy to help you.
       </p>
       <div class="form-footer">
-        <input placeholder="email@example.com" id="input2">
-        <button onclick="checkTwo()" >
-          Get Started For Free
-        </button>
+        <div class="input-cls-2">
+          <input placeholder="email@example.com" id="input2">
+        </div>
+           <button onclick="checkTwo()" >
+            Get Started For Free
+          </button>
+       
       </div>
 
     </div>
@@ -135,19 +139,18 @@
           <p>Terms</p>
           <p>Privacy</p>
         </div>
-        <div class="social">
-          <img src="images/fb-icon.png" alt="facebook" class="icon">
-          <img src="images/tweeter-icon.png" alt="twitter" class="icon">
-          <img src="images/ig-icon.png" alt="instagram" class="icon">
-        </div>
-    
-      </div>
-    </div>
 
+      </div>        
+
+    </div>
+    <div class="social">
+      <img src="images/fb-icon.png" alt="facebook" class="icon">
+      <img src="images/tweeter-icon.png" alt="twitter" class="icon">
+      <img src="images/ig-icon.png" alt="instagram" class="icon">
+    </div>
   </div>
 
 </footer>
-</div>
 
 <script src="index.js"></script>
 </body>
