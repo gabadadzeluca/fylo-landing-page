@@ -8,6 +8,8 @@
     --light-grayish-blue: hsl(240, 75%, 98%);
     --light-gray: hsl(0, 0%, 75%);
     --hover-blue: #6C9BFF;
+    --hover-link: #71DFCC;
+
     --red:#EF4877;
     --white: #FFFFFF;    
     /*FONTS*/
@@ -67,7 +69,7 @@ header p{
     color: var(--dark-blue);
     font-family: var(--open-sans-font);
     line-height: 1.3125rem;
-    min-width: 296px;
+    min-width: 18.5rem;
     max-width: 80%;
     text-align: center;
 }
@@ -83,7 +85,7 @@ header h4{
     align-items: center;
 }
 .header-box{
-    max-width: 627px;
+    max-width: 39.1875rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,7 +98,7 @@ header h4{
 
 .header-line{
     display: inline-flex;
-    min-width: 375px;
+    min-width: 23.4375rem;
     width: 87.2%;
     justify-content: space-between;
     margin-bottom: 6.125rem;
@@ -142,7 +144,7 @@ input{
     margin-top: 1rem;
 }
 .form-cls input{
-    width: 280px;
+    width: 17.5rem;
 }
 
 
@@ -202,10 +204,7 @@ main>section{
     color: var(--cyan);
     text-decoration: none;
 }
-.fylo-link img{
-    width: 0.75rem;
-    height:  0.75rem;
-}
+
 .main-txt{
     width: 100vw;
     display: flex;
@@ -279,7 +278,7 @@ footer{
 }
 #gray-div{
     max-width: 50rem;
-    margin: 0 47px;
+    margin: 0 2.9375rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -363,7 +362,7 @@ footer{
 }
 .footer-container{
     height: 100%;
-    margin-top: 65px;
+    margin-top: 4.0625rem;
     display: flex;
     flex-direction: column;
 }
@@ -394,12 +393,24 @@ footer{
 
 .social{
     display: inline-flex;
-    width: 6.5rem;
+    width: 9.5rem;
     justify-content: space-between;
     align-self: center;
 }
-.social img{
-    width: 1.6875rem;
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.125rem;
+    border: 1px solid var(--white);
+}
+.social a svg{
+    margin: 0;
+}
+.icon-div{
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .column-2, .column-3{
@@ -461,15 +472,15 @@ footer{
 
     .form-cls{
         width: auto;
-        height: 45px;
+        height: 2.8125rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
 
     .form-cls button{
-        width: 200px;
-        height: 44px;
+        width: 12.5rem;
+        height: 2.75rem;
         margin: 0 0 0 1rem;
     }
     .form-cls input{
@@ -485,7 +496,7 @@ footer{
 
     /*MAIN*/
    .illustration-2{
-        width: 542px;
+        width: 33.875rem;
     }
     #background-desktop{
         width: 100vw;
@@ -521,7 +532,7 @@ footer{
 
     .box-2{
         width: 18.0625rem;
-        padding: 19px 34px 26px 33px;
+        padding: 1.1875rem 2.125rem 1.625rem 2.0625rem;
     }
     .box-2 p{
         font-size: 0.8125rem;
@@ -551,8 +562,8 @@ footer{
     #gray-div{
         flex-direction: row;
         min-width: 80rem;
-        height: 137px;
-        margin-top: 100px;
+        height: 8.5625rem;
+        margin-top: 6.25rem;
     }
     .text{
         width:33.3125rem;
@@ -577,7 +588,7 @@ footer{
         font-size: 0.75rem;
     }
     .form-footer button{
-        width: 200px;
+        width: 12.5rem;
         height: 3rem;
         font-size: 0.875rem;
         margin-top: 1rem;
@@ -586,6 +597,7 @@ footer{
     /* BLUE-FOOTER */
     .blue-box{
         align-items: center;
+        height: 24.4375rem;
     }    
     .footer-container{
         width: 80rem;
@@ -615,13 +627,27 @@ footer{
     /* hover styles */
     .column-2 p:hover, .column-3 p:hover{
         cursor: pointer;
-        text-decoration: underline;
         color: var(--hover-blue);
     }
-    .social img:hover{
+    .icon-div:hover {
+        border:1px solid var(--hover-blue);
         cursor: pointer;
-        color: var(--hover-blue);
+        fill: var(--hover-blue);
     }
+    .icon-div:hover path{
+        fill: var(--hover-blue);
+    }
+
+    .fylo-link:hover{
+        border-bottom: 0.0625rem var(--hover-link) solid;
+    }
+    .fylo-link:hover p{
+        color: var(--hover-link);
+    }
+    .fylo-link:hover use{
+        fill: var(--hover-link);
+    }
+    
 
 
     /* buttons */
